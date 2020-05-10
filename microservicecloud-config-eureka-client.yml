@@ -11,11 +11,11 @@ spring:
   application: 
     name: microservicecloud-config-eureka-client
 
-eureka:  instance:
+eureka:   instance:
    #hostname: localhost                       #单机eureka服务端的实例名，直接使用localhost    hostname: eureka7001.com                  #eureka集群，服务端的实例名，在hosts文件做了映射
-  client:    register-with-eureka: false               #false表示不向注册中心注册自己
+  client:     register-with-eureka: false               #false表示不向注册中心注册自己
     fetch-registry: false                     #false表示自己就是注册中心，职责就是维护实例，并不需要去检索服务
-    service-url:      #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/             #单机配置，设置与eureka交互的地址查询和注册服务
+    service-url:       #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/             #单机配置，设置与eureka交互的地址查询和注册服务
       defaultZone: http://eureka7001.com:7001/eureka/
  
 ---
