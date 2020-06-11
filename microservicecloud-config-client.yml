@@ -3,6 +3,8 @@ spring:
     active:
     - dev
 ---
+config： 
+  info: 8201 dev microservicecloud-config-client
 server:
   port: 8201
 spring:
