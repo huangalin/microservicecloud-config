@@ -6,7 +6,7 @@ spring:
 spring:
   profiles: dev    #开发环境
   application:
-    name:  microservicecloud-config-yhl-dev3.0    
+    name:  microservicecloud-config-yhl-dev3.1    
 ---
 spring:
   profiles: test  #测试环境
